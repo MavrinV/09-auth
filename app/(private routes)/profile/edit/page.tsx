@@ -50,11 +50,10 @@ export default function EditProfilePage() {
         <h1 className={css.formTitle}>Edit Profile</h1>
 
         <Image
-          src={userImage}
+          src={userImage || "/default-avatar.jpg"}
           alt="User Avatar"
           width={120}
           height={120}
-          className={css.avatar}
         />
 
         <form className={css.profileInfo} onSubmit={handleSave}>
